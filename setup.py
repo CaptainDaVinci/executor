@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='executor',
     version='0.1',
-    packages=['executor'],
+    packages=['executor', 'executor.judge'],
     install_requires=[
         'Click',
         'requests',
