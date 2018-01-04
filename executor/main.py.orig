@@ -47,8 +47,6 @@ def spoj(config, tag):
         evaluate(config.fname)
     except Exception as e:
         click.secho(str(e), fg='red')
-
-
 @cli.command()
 @pass_config
 def check(config):

@@ -9,7 +9,6 @@ TICK = u'\u2714'
 CROSS = u'\u2718'
 BORDER = u'\u2550'
 
-
 def time_it(func):
     def wrapper(*args, **kwargs):
         from time import time
@@ -91,16 +90,14 @@ def evaluate(file_name):
 
     try:
         border = BORDER * click.get_terminal_size()[0]
-        msg = '{}\nCOMPILING\n{} {} -o {}'.format(
-            border, command, file_name, name)
+        msg = '{}\nCOMPILING\n{} {} -o {}'.format(border, command, file_name, name)
         click.echo(msg)
 
         # Raise exception on compilation fail.
         if compile_file(command, file_name, name) != 0:
             raise Exception('Compilation Failed!')
 
-        msg = 'File {} COMPILED SUCCESSFULLY\n\n{}\n\nRUNNING AGAINST TEST CASES\n'.format(
-            file_name, border)
+        msg = 'File {} COMPILED SUCCESSFULLY\n\n{}\n\nRUNNING AGAINST TEST CASES\n'.format(file_name, border)
         click.echo(msg)
 
         test_cases = executor.utility.load_json()
@@ -109,7 +106,6 @@ def evaluate(file_name):
         # TLE.
         message = 'Time limit exceeded! {:.2f} second'.format(TIMEOUT)
         click.secho(message, fg='yellow', bold=True)
-
 
 if __name__ == '__main__':
     evaluate('test.cc')

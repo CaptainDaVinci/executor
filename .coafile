@@ -1,0 +1,9 @@
+[all]
+bears = SpaceConsistencyBear
+use_spaces = True
+
+[all.python]
+files = executor/*.py, executor/judge/*.py
+bears = PEP8Bear
+
+

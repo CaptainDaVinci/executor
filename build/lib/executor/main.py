@@ -5,16 +5,13 @@ from sys import stdin
 import executor.utility
 from executor.evaluate import *
 
-
 class Config(object):
     """ Config file to communicate between commands """
 
     def __init__(self):
         self.fname = None
 
-
 pass_config = click.make_pass_decorator(Config, ensure=True)
-
 
 @click.group()
 @click.argument('file', type=click.File('r'))
@@ -35,7 +32,6 @@ def codeforces(config, tag):
     except Exception as e:
         click.secho(str(e), fg='red')
 
-
 @cli.command()
 @click.argument('tag')
 @pass_config
@@ -47,7 +43,6 @@ def spoj(config, tag):
         evaluate(config.fname)
     except Exception as e:
         click.secho(str(e), fg='red')
-
 
 @cli.command()
 @pass_config

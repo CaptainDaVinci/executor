@@ -23,8 +23,6 @@ def get_sample_cases(test_cases, case_type):
         test_cases[index] = '\n'.join(lines).strip().replace('\r', '')
 
     return test_cases
-
-
 def parse(response):
     """ Parses the test-cases from the html response obtained. """
 

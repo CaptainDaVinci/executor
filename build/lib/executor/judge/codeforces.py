@@ -90,6 +90,5 @@ def retrieve_test_cases(problem_tag):
     test_cases = parse(response)
     executor.utility.write_json(test_cases)
 
-
 if __name__ == '__main__':
     retrieve_test_cases('p4a')

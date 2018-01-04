@@ -2,8 +2,6 @@ import json
 import os
 
 json_file = os.path.join(os.path.dirname(__file__), 'judge', 'test-cases.json')
-
-
 def write_json(test_cases):
     """ Writes the test cases to a JSON file """
     with open(json_file, 'w') as f:
