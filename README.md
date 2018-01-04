@@ -4,7 +4,7 @@ A command line tool for running C and C++ code against sample test cases on SPOJ
 ## Installation
 
 1. Clone this repository.
-2. Run `python3 setup.py install`.
+2. Run `sudo python3 setup.py install`.
 3. Try running `executor --help` If no errors appear then executor was successfully installed.
 
 ## Usage
