@@ -1,3 +1,5 @@
+[![Gitter](https://badges.gitter.im/Kharagpur-Winter-of-Code/executor.svg)](https://gitter.im/Kharagpur-Winter-of-Code/executor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 ## Executor
 A command line tool for running C and C++ code against sample test cases on SPOJ and Codeforces.
 
